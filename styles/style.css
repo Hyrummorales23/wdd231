@@ -6,10 +6,11 @@
 }
 
 body {
-    font-family: "Sansita", "Roboto", sans-serif;
+    font-family: "Poppins", "Roboto";
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
+    font-weight: 200;
 }
 
 /* Header */
@@ -111,7 +112,7 @@ main {
 }
 
 .course-card .status {
-    font-weight: bold;
+    font-weight: 400;
     margin-top: 10px;
     display: block;
 }
