@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", "Roboto", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #36454f;
+}
+
+/* Navigation */
+nav {
+    background-color: #36454f;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+nav a.active {
+    color: yellow;
+}
+
+/* Larger Screens Navigation */
+@media (min-width: 640px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.course-card h2 {
+    margin-bottom: 10px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+/* Completed and In-Progress Courses */
+.course-card.completed {
+    background-color: #dff0d8;
+}
+
+.course-card .status {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.course-card .status.completed {
+    color: green;
+}
+
+.course-card .status.in-progress {
+    color: orange;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #36454f;
+    color: white;
+}

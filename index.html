@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hyrum's WDD231 Course Home Page">
+    <meta name="author" content="Hyrum Morales">
+    <title>Course Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/HyrumpPicture.jpg" alt="Hyrum Morales" class="profile-pic">
+        <h1>Hyrum's Course Home Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="https://github.com/Hyrummorales23" target="_blank">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/hyrum-morales-33ab711a0/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="card-grid">
+            <!-- Coursework Card -->
+            <div class="course-card">
+                <h2>Course Work</h2>
+                <p>Explore the courses and progress as you grow in web development and programming!</p>
+            </div>
+
+            <!-- Guatemala Card -->
+            <div class="course-card">
+                <h2>Guatemala</h2>
+                <img src="images/lakeAtitlan.jpeg" alt="Picture of Lake Atitlan">
+                <figcaption>Lake Atitlan, Guatemala</figcaption>
+            </div>
+        </div>
+
+        <!-- Web and Computer Programming Certificate Card -->
+        <div class="course-card full-width">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="course-cards">
+                <!-- Courses will be dynamically generated here -->
+            </div>
+            <div class="filter-buttons">
+                <button onclick="filterCourses('all')">All Courses</button>
+                <button onclick="filterCourses('WDD')">WDD Courses</button>
+                <button onclick="filterCourses('CSE')">CSE Courses</button>
+            </div>
+            <p id="total-credits">0 Credits</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 🌴 Hyrum Morales, Guatemala 🌴
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
