@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory page for the Chamber of Commerce project.">
+    <meta name="author" content="Hyrum Morales">
+    <meta property="og:title" content="Chamber Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/chamber-logo.png">
+    <meta property="og:url" content="https://Hyrummorales23.github.io/wdd231/chamber/directory.html">
+    <title>Chamber Directory</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guatemala's Chamber of Commerce Directory">
+    <meta name="twitter:description" content="Find the best business directory in the region.">
+    <meta name="twitter:image" content="images/chamber-logo">
+    <meta name="twitter:url" content="https://hyrummorales23.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:site" content="@iPanaHyrum">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/chamber-logo.png" alt="Website logo">
+        <h1>Guatemala's Chamber of Commerce</h1>
+        <button id="myButton"></button>
+    </header>
+    <nav id="animate">
+        <ul class="menuLinks">
+            <li><a href="Home" title="Home">Home</a></li>
+            <li><a href="About Us" title="About Us">About Us</a></li>
+            <li class="current-menu-item"><a href="#">Directory</a></li>
+            <li><a href="Contact" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="images/hero-image-placeholder.webp" alt="Hero image">
+        <button>Keynot Tickets</button>
+    </section>
+
+    <main>
+        <section class="events">
+            <h2>Events</h2>
+            <div class="placeholder">[Event details go here]</div>
+        </section>
+        <section class="current-weather">
+            <h2>Current Weather</h2>
+            <p>57°F</p>
+            <p>Partly Cloudy</p>
+            <p>High: 70°F</p>
+            <p>Low: 43°F</p>
+            <p>Humidity: 72%</p>
+            <p>Sunrise: 6:30am</p>
+            <p>Sunset: 6:10pm</p>
+            <img src="images/weather-image.png" alt="weather image">
+        </section>
+        <section class="forecast">
+            <h2> Weather Forcast</h2>
+            <p>Today: 60°F</p>
+            <p>Wednesday: 58°F</p>
+            <p>Thursday: 68°F</p>
+        </section>
+        <section class="business-directory">
+            <h2>Business Directory</h2>
+            <div class="view-toggle">
+                <button id="gridView">Grid View</button>
+                <button id="listView">List View</button>
+            </div>
+            <div id="memberContainer" class="grid-view"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Guatemala's Chamber of Commerce</p>
+            <p>7av. 12-32 zona 5</p>
+            <p>Quetzaltenango, Guatemala 09001</p>
+            <p>Email: info@guatemalachamber.org</p>
+            <p>Phone: (223) 555-2300</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Guatemala's of Commerce. All rights reserved.</p>
+            <p>WDD 231 - Hyrum Morales</p>
+            <p id="lastModified"></p>
+            <p>WDD231 Class Project by Hyrum Morales</p>
+        </div>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

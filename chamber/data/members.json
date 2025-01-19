@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Pacifiko.com",
+        "address": "Avenida Reforma 10-00, Zona 10, Ciudad de Guatemala",
+        "phone": "+502 1234-5678",
+        "website": "https://www.pacifiko.com",
+        "image": "images/pacifiko-logo.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Textiles Mayas",
+        "address": "Avenida Central 45, Chichicastenango, Quiché",
+        "phone": "+502 7756-2345",
+        "website": "https://textilesmayas.com",
+        "image": "images/textiles-maya-logo.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Café Quetzal",
+        "address": "Calle Real 12, Zona 1, Quetzaltenango",
+        "phone": "+502 7765-1234",
+        "website": "https://cafequetzal.com",
+        "image": "images/cafe-quetzal-logo.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Intelaf",
+        "address": "Calzada Roosevelt 12-34, Zona 7, Ciudad de Guatemala",
+        "phone": "+502 4567-8901",
+        "website": "https://www.intelaf.com",
+        "image": "images/intelaf-logo.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Cemaco",
+        "address": "Avenida Las Américas 20-50, Zona 13, Ciudad de Guatemala",
+        "phone": "+502 5678-9012",
+        "website": "https://www.cemaco.com",
+        "image": "images/cemaco-logo.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Max",
+        "address": "Diagonal 6 14-75, Zona 10, Ciudad de Guatemala",
+        "phone": "+502 6789-0123",
+        "website": "https://www.max.com.gt",
+        "image": "images/max-logo.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Guatemala Digital",
+        "address": "Ruta 1 4-68, Zona 4, Ciudad de Guatemala",
+        "phone": "+502 7890-1234",
+        "website": "https://www.guatemaladigital.com",
+        "image": "images/guatemala-digital-logo.jpg",
+        "membershipLevel": 3
+    }
+]
