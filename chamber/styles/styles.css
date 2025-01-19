@@ -39,9 +39,8 @@ header {
 
 header img {
     max-width: 100px;
-    max-height: auto;
+    height: auto;
     min-width: 30px;
-    min-height: auto;
 }
 
 /* Hamburger button styles */
@@ -259,9 +258,8 @@ main section {
 
 .current-weather img {
     max-width: 100px;
-    max-height: auto;
+    height: auto;
     min-width: 40px;
-    min-height: auto;
 }
 
 .business-directory {
