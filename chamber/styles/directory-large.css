@@ -20,6 +20,12 @@
         justify-content: space-between;
         gap: 20px;
     }
+
+    .business-directory {
+        grid-column: span 3;
+        margin-top: 20px;
+        font-family: 'Poppins', Arial;
+    }
 }
 
 /*End of media query*/
