@@ -5,7 +5,7 @@
         "phone": "+502 1234-5678",
         "website": "https://www.pacifiko.com",
         "image": "images/pacifiko-logo.png",
-        "membershipLevel": 3
+        "membershipLevel": "Platinum"
     },
     {
         "name": "Textiles Mayas",
@@ -13,7 +13,7 @@
         "phone": "+502 7756-2345",
         "website": "https://textilesmayas.com",
         "image": "images/textiles-maya-logo.png",
-        "membershipLevel": 2
+        "membershipLevel": "Gold"
     },
     {
         "name": "Café Quetzal",
@@ -21,7 +21,7 @@
         "phone": "+502 7765-1234",
         "website": "https://cafequetzal.com",
         "image": "images/cafe-quetzal-logo.png",
-        "membershipLevel": 3
+        "membershipLevel": "Platinum"
     },
     {
         "name": "Intelaf",
@@ -29,7 +29,7 @@
         "phone": "+502 4567-8901",
         "website": "https://www.intelaf.com",
         "image": "images/intelaf-logo.png",
-        "membershipLevel": 3
+        "membershipLevel": "Platinum"
     },
     {
         "name": "Cemaco",
@@ -37,7 +37,7 @@
         "phone": "+502 5678-9012",
         "website": "https://www.cemaco.com",
         "image": "images/cemaco-logo.png",
-        "membershipLevel": 2
+        "membershipLevel": "Gold"
     },
     {
         "name": "Max",
@@ -45,7 +45,7 @@
         "phone": "+502 6789-0123",
         "website": "https://www.max.com.gt",
         "image": "images/max-logo.png",
-        "membershipLevel": 1
+        "membershipLevel": "Silver"
     },
     {
         "name": "Guatemala Digital",
@@ -53,6 +53,6 @@
         "phone": "+502 7890-1234",
         "website": "https://www.guatemaladigital.com",
         "image": "images/guatemala-digital-logo.jpg",
-        "membershipLevel": 3
+        "membershipLevel": "Platinum"
     }
 ]

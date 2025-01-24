@@ -36,48 +36,76 @@
     </header>
     <nav id="animate">
         <ul class="menuLinks">
-            <li><a href="#" title="Home">Home</a></li>
+            <li class="current-menu-item"><a href="index.html">Home</a></li>
             <li><a href="#" title="About Us">About Us</a></li>
-            <li class="current-menu-item"><a href="#">Directory</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
             <li><a href="#" title="Contact">Contact</a></li>
         </ul>
     </nav>
 
     <section class="hero">
-        <img src="images/hero-image-placeholder.webp" alt="Hero image">
-        <button>Keynot Tickets</button>
+        <div class="hero-content">
+            <h1>Enabling Success for Businesses in Guatemala</h1>
+            <p>Your path to resources, networks, and opportunities for growth.</p>
+            <button>Join Us Today</button>
+        </div>
     </section>
 
     <main>
-        <section class="events">
-            <h2>Events</h2>
-            <div class="placeholder">[Event details go here]</div>
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <ul>
+                <li>Annual Business Networking Gala - January 25th</li>
+                <li>Monthly Workshop: Growing Your Brand - February 10th</li>
+                <li>Community Clean-Up Day - March 15th</li>
+            </ul>
         </section>
+
+        <!-- Current Weather Section -->
         <section class="current-weather">
             <h2>Current Weather</h2>
-            <p>57°F</p>
-            <p>Partly Cloudy</p>
-            <p>High: 70°F</p>
-            <p>Low: 43°F</p>
-            <p>Humidity: 72%</p>
-            <p>Sunrise: 6:30am</p>
-            <p>Sunset: 6:10pm</p>
-            <img src="images/weather-image.png" alt="weather image">
-        </section>
-        <section class="forecast">
-            <h2> Weather Forcast</h2>
-            <p>Today: 60°F</p>
-            <p>Wednesday: 58°F</p>
-            <p>Thursday: 68°F</p>
-        </section>
-        <section class="business-directory">
-            <h2>Business Directory</h2>
-            <div class="view-toggle">
-                <button id="gridView">Grid View</button>
-                <button id="listView">List View</button>
+            <img id="current-icon" src="" alt="Weather Icon" style="display: none;">
+            <div class="text-content">
+                <p>Temperature: <span id="current-temp">Loading...</span>°C</p>
+                <p>Description: <span id="current-description">Loading...</span></p>
+                <p>High: <span id="current-high">Loading...</span>°C</p>
+                <p>Low: <span id="current-low">Loading...</span>°C</p>
+                <p>Humidity: <span id="current-humidity">Loading...</span>%</p>
+                <p>Sunrise: <span id="current-sunrise">Loading...</span></p>
+                <p>Sunset: <span id="current-sunset">Loading...</span></p>
             </div>
-            <div id="memberContainer" class="grid-view"></div>
         </section>
+
+        <!-- Weather Forecast Section -->
+        <section class="weather-forecast">
+            <h2>Weather Forecast</h2>
+            <div class="forecast-container">
+                <div class="forecast-day">
+                    <h3>Today</h3>
+                    <p>Temperature: <span id="forecast-today-temp">Loading...</span>°C</p>
+                    <p>Description: <span id="forecast-today-desc">Loading...</span></p>
+                </div>
+                <div class="forecast-day">
+                    <h3>Tomorrow</h3>
+                    <p>Temperature: <span id="forecast-tomorrow-temp">Loading...</span>°C</p>
+                    <p>Description: <span id="forecast-tomorrow-desc">Loading...</span></p>
+                </div>
+                <div class="forecast-day">
+                    <h3>Day After Tomorrow</h3>
+                    <p>Temperature: <span id="forecast-dayafter-temp">Loading...</span>°C</p>
+                    <p>Description: <span id="forecast-dayafter-desc">Loading...</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotlight Section -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="memberContainer">
+                <!-- Spotlight cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
     </main>
 
     <footer>
@@ -86,7 +114,7 @@
             <p>7av. 12-32 zona 5</p>
             <p>Quetzaltenango, Guatemala 09001</p>
             <p>Email: info@guatemalachamber.org</p>
-            <p>Phone: (223) 555-2300</p>
+            <p>Phone: +502 36125348</p>
         </div>
 
         <div class="social-media">
@@ -104,7 +132,7 @@
 
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/index.js" defer></script>
 </body>
 
 </html>

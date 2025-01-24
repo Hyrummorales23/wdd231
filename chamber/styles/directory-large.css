@@ -1,5 +1,8 @@
 /*Start of media query*/
 @media only screen and (min-width: 38rem) {
+    #myButton {
+        display: none;
+    }
 
     ul.menuLinks,
     ul.menuLinks.open {
@@ -19,12 +22,6 @@
         display: flex;
         justify-content: space-between;
         gap: 20px;
-    }
-
-    .business-directory {
-        grid-column: span 3;
-        margin-top: 20px;
-        font-family: 'Poppins', Arial;
     }
 }
 

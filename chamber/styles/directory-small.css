@@ -1,15 +1,10 @@
 /* Define color variables */
 :root {
     --primary-color: #333333;
-    /* Dark neutral for headers and strong accents */
     --secondary-color: White;
-    /* Light neutral for backgrounds */
     --accent-color: #0071E3;
-    /* Vibrant blue for links and key elements */
     --dark-color: #1D1D1F;
-    /* Dark grey for text on light backgrounds */
     --light-color: #FFFFFF;
-    /* White for text on dark backgrounds */
 }
 
 /* General Reset */
@@ -23,6 +18,7 @@ body {
 
 h2 {
     font-family: 'Poppins', Arial;
+    margin: 1rem;
 }
 
 header {
@@ -30,7 +26,7 @@ header {
     color: var(--light-color);
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -41,6 +37,7 @@ header img {
     max-width: 100px;
     height: auto;
     min-width: 30px;
+    margin: 1rem;
 }
 
 /* Hamburger button styles */
@@ -91,7 +88,7 @@ ul.menuLinks li a {
 
 li.current-menu-item a {
     background-color: rgba(0, 0, 0, 0.05);
-    border-left: 4px solid var(--accent-color);
+    border-left: 4px solid var(--dark-color);
 }
 
 ul.menuLinks {
@@ -110,8 +107,8 @@ button {
     padding: 0.5rem 1rem;
     margin: 0 5px;
     border: none;
-    background-color: var(--light-color);
-    color: var(--dark-color);
+    background-color: var(--dark-color);
+    color: var(--light-color);
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
