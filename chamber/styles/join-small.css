@@ -86,7 +86,7 @@ ul.menuLinks li a {
 }
 
 li.current-menu-item a {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.2);
     border-left: 4px solid var(--dark-color);
 }
 
