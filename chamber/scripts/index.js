@@ -11,6 +11,11 @@ hamburgerElement.addEventListener('click', () => {
     hamburgerElement.classList.toggle('open');
 });
 
+// Join Us Today Button
+document.getElementById("joinButton").addEventListener("click", () => {
+    window.location.href = "join.html";
+});
+
 // Function to capitalize each word in a string
 const capitalizeWords = (str) => {
     return str
