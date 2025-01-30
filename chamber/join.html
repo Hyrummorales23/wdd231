@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Do not miss the opportunity and Join the Guatemala's Chamber of Commerce.">
+    <meta name="author" content="Hyrum Morales">
+    <meta property="og:title" content="Guatemala Chamber of Commerce Join Us Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://github.com/Hyrummorales23/wdd231/blob/main/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://Hyrummorales23.github.io/wdd231/chamber/index.html">
+    <title>Join Guatemala's Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/chamber-logo.png" alt="Website logo">
+        <h1>Guatemala's Chamber of Commerce</h1>
+        <button id="myButton"></button>
+    </header>
+    <nav id="animate">
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="#" title="About Us">About Us</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
+            <li class="current-menu-item"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="membership-form">
+            <h2>Membership Application</h2>
+            <form id="membershipForm" action="thankyou.html" method="get">
+                <label for="first-name">First Name: <span class="required">*</span></label>
+                <input type="text" id="first-name" name="first-name" required autocomplete="given-name">
+
+                <label for="last-name">Last Name: <span class="required">*</span></label>
+                <input type="text" id="last-name" name="last-name" required autocomplete="family-name">
+
+                <label for="org-title">Organizational Title: </label>
+                <input type="text" id="org-title" name="org-title" pattern="[A-Za-z\-\s]{7,}"
+                    placeholder="Example: Marketing Manager">
+
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email"
+                    placeholder="example@email.com">
+
+                <label for="phone">Mobile Phone: <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel">
+
+                <label for="organization">Business/Organization Name: <span class="required">*</span></label>
+                <input type="text" id="organization" name="organization" required autocomplete="organization">
+
+                <label for="membership">Membership Level: <span class="required">*</span></label>
+                <select id="membership" name="membership" required>
+                    <option value="Non-profit">NP Membership - No Fee</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Business Description: </label>
+                <textarea id="description" name="description"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <section class="membership-levels">
+            <h2>Membership Levels</h2>
+
+            <div class="membership-card">
+                <h3>Non Profit Membership Level</h3>
+                <button class="open-modal" data-modal="np-modal">Learn More</button>
+            </div>
+
+            <div class="membership-card">
+                <h3>Bronze Membership Level</h3>
+                <button class="open-modal" data-modal="bronze-modal">Learn More</button>
+            </div>
+
+            <div class="membership-card">
+                <h3>Silver Membership Level</h3>
+                <button class="open-modal" data-modal="silver-modal">Learn More</button>
+            </div>
+
+            <div class="membership-card">
+                <h3>Gold Membership Level</h3>
+                <button class="open-modal" data-modal="gold-modal">Learn More</button>
+            </div>
+
+            <dialog id="np-modal" class="modal">
+                <h2>Non-Profit Membership</h2>
+                <p>Non-profit organizations can join for free and enjoy networking opportunities.</p>
+                <button class="close-modal">Close</button>
+            </dialog>
+
+            <dialog id="bronze-modal" class="modal">
+                <h2>Bronze Membership</h2>
+                <p>Access exclusive training and business support with Bronze Membership.</p>
+                <button class="close-modal">Close</button>
+            </dialog>
+
+            <dialog id="silver-modal" class="modal">
+                <h2>Silver Membership</h2>
+                <p>Enhance your business reach with additional marketing support.</p>
+                <button class="close-modal">Close</button>
+            </dialog>
+
+            <dialog id="gold-modal" class="modal">
+                <h2>Gold Membership</h2>
+                <p>Top-tier support with premium networking and event access.</p>
+                <button class="close-modal">Close</button>
+            </dialog>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Guatemala's Chamber of Commerce</p>
+            <p>7av. 12-32 zona 5</p>
+            <p>Quetzaltenango, Guatemala 09001</p>
+            <p>Email: info@guatemalachamber.org</p>
+            <p>Phone: +502 36125348</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Guatemala's Chamber of Commerce. All rights reserved.</p>
+            <p>WDD231 - Hyrum Morales</p>
+            <p id="lastModified"></p>
+            <p>WDD231 Class Project by Hyrum Morales</p>
+        </div>
+    </footer>
+</body>
+
+</html>

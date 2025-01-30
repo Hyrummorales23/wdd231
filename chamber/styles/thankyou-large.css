@@ -1,0 +1,18 @@
+/*Start of media query*/
+@media only screen and (min-width: 38rem) {
+    #form-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* tags */
+        gap: 1rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+}
+
+/*End of media query*/
