@@ -1,0 +1,51 @@
+/* Color Schema */
+:root {
+    --dark-green: #2E5D38;
+    --red: #D72638;
+    --black: #222;
+    --gray: #B0B0B0;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Rock Salt', cursive;
+    color: var(--dark-green);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 5px;
+}
+
+section {
+    background: var(--gray);
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: var(--white);
+    margin: 5px 0;
+    padding: 8px;
+    border-left: 5px solid var(--dark-green);
+}
