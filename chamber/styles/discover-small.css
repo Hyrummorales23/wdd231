@@ -16,7 +16,8 @@ body {
 }
 
 main h1 {
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     justify-self: center;
 }
 
