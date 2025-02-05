@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="styles/discover-small.css">
     <link rel="stylesheet" href="styles/discover-medium.css">
     <link rel="stylesheet" href="styles/discover-large.css">
-    <script src="scripts/discover.js" defer></script>
+
+
+    <script type="module" src="scripts/discover.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +29,7 @@
 <body>
     <header>
         <img src="images/chamber-logo.png" alt="Website logo">
-        <h1>Guatemala's Chamber of Commerce</h1>
+        <h1>Discover Guatemala's Chamber of Commerce</h1>
         <button id="myButton"></button>
     </header>
     <nav id="animate">
@@ -42,88 +45,8 @@
         <!-- Visitor Message -->
         <section id="visitor-message"></section>
 
-        <!-- Places Grid -->
-        <section class="grid-container">
-            <article class="card">
-                <h2>Rio Dulce</h2>
-                <figure>
-                    <img src="images/rio-dulce.webp" alt="Rio Dulce Picture">
-                </figure>
-                <address>Izabal, Guatemala</address>
-                <p>A scenic river leading to the Caribbean, rich in Garífuna culture</p>
-                <button>Learn More</button>
-            </article>
-
-            <article class="card">
-                <h2>City Museum</h2>
-                <figure>
-                    <img src="images/city-museum.webp" alt="City Museum">
-                </figure>
-                <address>Heritage Av, Guatemala City</address>
-                <p>Explore the rich history, ultra rare relics and culture of our region.</p>
-                <button>Learn More</button>
-            </article>
-
-            <article class="card">
-                <h2>Tikal</h2>
-                <figure>
-                    <img src="images/tikal.webp" alt="Tikal Picture">
-                </figure>
-                <address>789 Tikal Rd, Peten, Guatemala</address>
-                <p>A breathtaking Mayan city with stunning views from the top of the ruins, local flora and fauna </p>
-                <button>Learn More</button>
-            </article>
-
-            <article class="card">
-                <h2>Lake Atitlan</h2>
-                <figure>
-                    <img src="images/lake-atitlan.webp" alt="Lake Atitlan Picture">
-                </figure>
-                <address>Sololá, Guatemala</address>
-                <p>A stunning lake surrounded by volcanoes and indigenous villages</p>
-                <button>Learn More</button>
-            </article>
-
-            <article class="card">
-                <h2>Antigua Guatemala</h2>
-                <figure>
-                    <img src="images/antigua-guatemala.webp" alt="Antigua Guatemala Picture">
-                </figure>
-                <address>Sacatepéquez, Guatemala</address>
-                <p>A charming colonial city with cobblestone streets and historic churches</p>
-                <button>Learn More</button>
-            </article>
-
-            <article class="card">
-                <h2>Art & Culture Center</h2>
-                <figure>
-                    <img src="images/culture-center.webp" alt="Art & Culture Center Picture">
-                </figure>
-                <address>22 Creativity Ln, Our City</address>
-                <p>Gallery exhibitions, workshops, and live performances. All in the same place</p>
-                <button>Learn More</button>
-            </article>
-
-            <article class="card">
-                <h2>Historic Town Square</h2>
-                <figure>
-                    <img src="images/historic-town-square.webp" alt="Historic Town Square">
-                </figure>
-                <address>123 Main St, Antigua Guatemala</address>
-                <p>A beautiful gathering place with historic buildings and local shops</p>
-                <button>Learn More</button>
-            </article>
-
-            <article class="card">
-                <h2>Old Train Station</h2>
-                <figure>
-                    <img src="images/historic-train-station.webp" alt="Old Train Station picture">
-                </figure>
-                <address>Train Station Dr, Xela</address>
-                <p>A symbol of our industrial history and great for photography spots</p>
-                <button>Learn More</button>
-            </article>
-        </section>
+        <!-- Places Grid (Dynamically Populated) -->
+        <section class="grid-container" id="places-container"></section>
     </main>
 
     <footer>

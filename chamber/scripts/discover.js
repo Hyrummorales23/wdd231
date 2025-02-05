@@ -29,3 +29,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
     localStorage.setItem("lastVisit", currentVisit);
 });
+
+
+import { places } from '../data/places.mjs';
+
+document.addEventListener("DOMContentLoaded", () => {
+    const gridContainer = document.querySelector(".grid-container");
+
+    places.forEach(place => {
+        // Create article (card)
+        const card = document.createElement("article");
+        card.classList.add("card");
+
+        // Create and add title
+        const title = document.createElement("h2");
+        title.textContent = place.name;
+        card.appendChild(title);
+
+        // Create and add figure & image
+        const figure = document.createElement("figure");
+        const image = document.createElement("img");
+        image.src = place.image;
+        image.alt = place.alt;
+        figure.appendChild(image);
+        card.appendChild(figure);
+
+        // Create and add address
+        const address = document.createElement("address");
+        address.textContent = place.address;
+        card.appendChild(address);
+
+        // Create and add description
+        const description = document.createElement("p");
+        description.textContent = place.description;
+        card.appendChild(description);
+
+        // Create and add button
+        const button = document.createElement("button");
+        button.textContent = "Learn More";
+        card.appendChild(button);
+
+        // Append card to the grid container
+        gridContainer.appendChild(card);
+    });
+});

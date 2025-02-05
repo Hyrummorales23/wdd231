@@ -1,5 +1,5 @@
 /* Responsive Grid Layout */
-@media (min-width: 641px) {
+@media only screen and (min-width: 38rem) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -17,5 +17,14 @@
 
     h2 {
         font-size: medium;
+    }
+
+    #places-container .card {
+
+        grid-template-areas:
+            "pictrure name"
+            "pictrure description"
+            "pictrure location"
+            "button";
     }
 }

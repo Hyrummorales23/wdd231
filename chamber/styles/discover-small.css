@@ -169,18 +169,39 @@ footer div {
 }
 
 /* Card Styling */
-.card {
+#places-container .card {
     background: white;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "pictrure"
+        "description"
+        "location"
+        "button";
+}
+
+.card h2 {
+    grid-area: name;
 }
 
 .card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    grid-area: picture;
+}
+
+.card p {
+    grid-area: description;
+}
+
+.card address {
+    grid-area: location;
 }
 
 .card button {
@@ -191,6 +212,7 @@ footer div {
     cursor: pointer;
     margin-top: 10px;
     border-radius: 5px;
+    grid-area: button;
 }
 
 .card button:hover {
