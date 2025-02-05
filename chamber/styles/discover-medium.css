@@ -1,0 +1,21 @@
+/* Responsive Grid Layout */
+@media (min-width: 641px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .card img:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+    }
+
+    h2 {
+        font-size: medium;
+    }
+}

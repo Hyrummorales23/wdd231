@@ -142,7 +142,7 @@ ul.menuLinks {
     transform: translateX(0%);
     /* Adjust for centering */
     padding: 10px 10px;
-    background-color: var(--accent-color);
+    background-color: rgb(3, 99, 8);
     color: var(--light-color);
     border: none;
     border-radius: 5px;
@@ -155,7 +155,7 @@ ul.menuLinks {
 }
 
 .hero button:hover {
-    background-color: var(--dark-color);
+    background-color: rgb(212, 90, 3);
     transform: translateX(0%) scale(1.1);
     /* Slight grow effect on hover */
 }
