@@ -1,0 +1,64 @@
+/*Start of media query*/
+@media only screen and (min-width: 57rem) {
+    #myButton {
+        display: none;
+    }
+
+    header h1 {
+        font-size: xx-large;
+    }
+
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .fact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main img {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease-in-out;
+        justify-self: center;
+        border-color: 5px solid var(--dark-green);
+    }
+
+    main section {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    main img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    main section:hover {
+        transform: scale(1.02);
+    }
+
+    .intro figcaption {
+        justify-self: center;
+    }
+
+}
+
+/*End of media query*/
