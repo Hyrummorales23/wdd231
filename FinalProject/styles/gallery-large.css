@@ -1,0 +1,45 @@
+/*Start of media query*/
+@media only screen and (min-width: 57rem) {
+    #myButton {
+        display: none;
+    }
+
+    header h1 {
+        font-size: xx-large;
+    }
+
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    #cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .spotlight-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+}
+
+/*End of media query*/
