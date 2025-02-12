@@ -9,7 +9,7 @@ hamburgerElement.addEventListener('click', () => {
 
 // Explore Button
 document.getElementById("joinButton").addEventListener("click", () => {
-    window.location.href = "visitor.html";
+    window.location.href = "visitors.html";
 });
 
 // Function to capitalize each word in a string
@@ -81,3 +81,38 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Initialize weather data on page load
 document.addEventListener("DOMContentLoaded", fetchCurrentWeather);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const visitMessage = document.createElement("div");
+    visitMessage.id = "visit-message";
+    visitMessage.style.position = "fixed";
+    visitMessage.style.top = "20px";
+    visitMessage.style.left = "50%";
+    visitMessage.style.transform = "translateX(-50%)";
+    visitMessage.style.padding = "10px 20px";
+    visitMessage.style.backgroundColor = "rgba(0, 100, 0, 0.9)";
+    visitMessage.style.color = "white";
+    visitMessage.style.borderRadius = "10px";
+    visitMessage.style.fontSize = "16px";
+    visitMessage.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.2)";
+    visitMessage.style.display = "none"; // Hidden by default
+    document.body.appendChild(visitMessage);
+
+    const lastVisit = localStorage.getItem("lastVisit");
+
+    if (!lastVisit) {
+        visitMessage.innerText = "Welcome to Tikal National Park! Enjoy your first visit!";
+    } else {
+        visitMessage.innerText = "Welcome back! We hope you enjoy exploring more about Tikal.";
+    }
+
+    // Show message for 3 seconds
+    visitMessage.style.display = "block";
+    setTimeout(() => {
+        visitMessage.style.display = "none";
+    }, 3000);
+
+    // Store the current visit date
+    localStorage.setItem("lastVisit", new Date().toISOString());
+});

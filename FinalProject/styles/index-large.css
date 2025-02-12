@@ -1,5 +1,5 @@
 /*Start of media query*/
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 57rem) {
     #myButton {
         display: none;
     }
