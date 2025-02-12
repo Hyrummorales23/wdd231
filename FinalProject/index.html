@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the wonders of Tikal National Park with Exploring Tikal. Learn about its ancient Mayan ruins, diverse wildlife, rich history, and travel tips for an unforgettable adventure.">
+    <meta name="author" content="Hyrum Morales">
+    <meta property="og:title" content="Discover Tikal National Park">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://github.com/Hyrummorales23/wdd231/blob/main/FinalProject/images/tikal-logo.png">
+    <meta property="og:url" content="https://Hyrummorales23.github.io/wdd231/FinalProject/index.html">
+    <title>Discover Tikal National Park</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+
+    <script src="scripts/index.js" defer></script>
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card"
+        content="https://github.com/Hyrummorales23/wdd231/blob/main/FinalProject/images/chamber-logo.png">
+    <meta name="twitter:title" content="Discover Tikal National Park">
+    <meta name="twitter:description"
+        content="Discover the wonders of Tikal National Park with Exploring Tikal. Learn about its ancient Mayan ruins, diverse wildlife, rich history, and travel tips for an unforgettable adventure.">
+    <meta name="twitter:image" content="images/tikal-logo">
+    <meta name="twitter:url" content="https://hyrummorales23.github.io/wdd231/FinalProject/index.html">
+    <meta name="twitter:site" content="@iPanaHyrum">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Website logo">
+        <h1>Discover Tikal National Park</h1>
+        <button id="myButton"></button>
+        <nav id="animate">
+            <ul class="menuLinks">
+                <li class="current-menu-item"><a href="index.html">Home</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+                <li><a href="visitors.html" title="Visitors">Visitors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Wonders of Tikal</h1>
+            <p>Unveil the secrets of an ancient Mayan city surrounded by lush jungle. Plan your adventure today!</p>
+            <button id="joinButton">Explore Now</button>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- Introduction Section -->
+        <section class="introduction">
+            <h2>Step Into the World of the Maya</h2>
+            <p>Hidden deep within the lush jungles of Guatemala, Tikal National Park stands as one of the most
+                remarkable remnants of the ancient Mayan civilization. Towering pyramids, grand plazas, and intricate
+                carvings tell the story of a powerful empire that thrived for centuries.</p>
+            <p>Beyond its breathtaking ruins, Tikal is home to a vibrant ecosystem filled with exotic wildlife, from
+                howler monkeys to colorful toucans. Whether you're an adventurer, history enthusiast, or nature lover,
+                Tikal offers an unforgettable journey through time and nature.</p>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location">
+            <h2>Where is Tikal?</h2>
+            <p>Located in the heart of the Guatemalan jungle, Tikal National Park is a UNESCO World Heritage Site, rich
+                in history and biodiversity.</p>
+            <p><strong>Address:</strong> Tikal National Park, Petén, Guatemala</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.045017624631!2d-89.62256382455516!3d17.22201608323138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f2f97343db28221%3A0xf17b25952741cf42!2sTikal%20National%20Park!5e0!3m2!1sen!2s!4v1707574912345"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Current Weather Section -->
+        <section class="current-weather">
+            <h2>Current Weather</h2>
+            <img id="current-icon" src="images/loading-weather-icon.svg" alt="Weather Icon">
+            <div class="text-content">
+                <p>Temperature: <span id="current-temp">Loading...</span>°C</p>
+                <p>Description: <span id="current-description">Loading...</span></p>
+                <p>High: <span id="current-high">Loading...</span>°C</p>
+                <p>Low: <span id="current-low">Loading...</span>°C</p>
+                <p>Humidity: <span id="current-humidity">Loading...</span>%</p>
+                <p>Sunrise: <span id="current-sunrise">Loading...</span></p>
+                <p>Sunset: <span id="current-sunset">Loading...</span></p>
+            </div>
+        </section>
+
+        <!-- Spotlight Section -->
+        <section class="spotlights">
+            <h2>Tikal Beauty</h2>
+            <div id="cardContainer">
+                <!-- Spotlight cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Discover Tikal National Park</p>
+            <p>7av. 12-32 zona 5</p>
+            <p>Peten, Guatemala</p>
+            <p>Email: info@TikalNationalPark.org</p>
+            <p>Phone: +502 36125348</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Discover Tikal National Park. All rights reserved.</p>
+            <p>WDD 231 - Hyrum Morales</p>
+            <p>Thank you for Visiting</p>
+            <p>WDD231 Final Project by Hyrum Morales</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

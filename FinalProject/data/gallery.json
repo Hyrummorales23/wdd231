@@ -1,0 +1,109 @@
+{
+    "gallery": [
+        {
+            "name": "Temple I (Temple of the Great Jaguar)",
+            "description": "A massive pyramid that once served as a tomb for a ruler.",
+            "image": "images/temple1.webp"
+        },
+        {
+            "name": "Temple II (Temple of the Masks)",
+            "description": "Known for its impressive mask-like carvings and view of the plaza.",
+            "image": "images/temple2.webp"
+        },
+        {
+            "name": "Temple IV",
+            "description": "The tallest structure in Tikal, offering stunning views over the jungle.",
+            "image": "images/temple4.webp"
+        },
+        {
+            "name": "The Great Plaza",
+            "description": "The central public space surrounded by grand structures.",
+            "image": "images/greatplaza.webp"
+        },
+        {
+            "name": "Temple III",
+            "description": "A pyramid with a rich history, featuring a tomb and notable carvings.",
+            "image": "images/temple3.webp"
+        },
+        {
+            "name": "Acropolis of the Lost World",
+            "description": "A ceremonial and political center with impressive stonework.",
+            "image": "images/acropolis.webp"
+        },
+        {
+            "name": "Temple V",
+            "description": "A lesser-known but significant pyramid with steep steps.",
+            "image": "images/temple5.webp"
+        },
+        {
+            "name": "Howler Monkey",
+            "description": "A loud primate known for its deep, haunting calls through the jungle.",
+            "image": "images/howler-monkey.webp"
+        },
+        {
+            "name": "Jaguars",
+            "description": "Solitary and elusive big cats that roam the jungle's undergrowth.",
+            "image": "images/jaguar.webp"
+        },
+        {
+            "name": "Spider Monkey",
+            "description": "A long-limbed primate that swings from tree to tree in the canopy.",
+            "image": "images/spider-monkey.webp"
+        },
+        {
+            "name": "Toucan",
+            "description": "A colorful bird with a large, distinctive bill, often seen in Tikal’s trees.",
+            "image": "images/toucan.webp"
+        },
+        {
+            "name": "Coati",
+            "description": "A small mammal with a long tail and a curious nature.",
+            "image": "images/coati.webp"
+        },
+        {
+            "name": "Pygmy Owl",
+            "description": "A small owl species that can be spotted during early mornings or evenings.",
+            "image": "images/pygmy-owl.webp"
+        },
+        {
+            "name": "Harpy Eagle",
+            "description": "A large and powerful bird of prey known for its massive talons.",
+            "image": "images/harpy-eagle.webp"
+        },
+        {
+            "name": "Ceiba Tree",
+            "description": "A towering tree often regarded as sacred by the Maya.",
+            "image": "images/ceiba.webp"
+        },
+        {
+            "name": "Mahogany Tree",
+            "description": "A large, evergreen tree prized for its strong, reddish wood.",
+            "image": "images/mahogany.webp"
+        },
+        {
+            "name": "Wild Orchid",
+            "description": "A beautiful flowering plant with various species blooming in the park.",
+            "image": "images/wild-orchid.webp"
+        },
+        {
+            "name": "Plumeria",
+            "description": "A fragrant, flowering shrub often found in Tikal’s temple grounds.",
+            "image": "images/plumeria.webp"
+        },
+        {
+            "name": "Palms",
+            "description": "A variety of palm trees that grow in the tropical climate of Tikal.",
+            "image": "images/palm.webp"
+        },
+        {
+            "name": "Cacao Tree",
+            "description": "The source of cacao beans, which were vital to the Mayan diet.",
+            "image": "images/cacao.webp"
+        },
+        {
+            "name": "Balsa Tree",
+            "description": "A light, buoyant tree used by the Maya for creating rafts.",
+            "image": "images/balsa.webp"
+        }
+    ]
+}
