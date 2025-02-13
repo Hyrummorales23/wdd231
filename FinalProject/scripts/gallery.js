@@ -28,4 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         })
         .catch(error => console.error("Error loading gallery data:", error));
+    // Update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
 });

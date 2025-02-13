@@ -53,4 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Set the timestamp when the page loads
     setTimestamp();
+    // Update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
 });

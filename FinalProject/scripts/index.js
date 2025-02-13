@@ -54,36 +54,37 @@ const fetchCurrentWeather = async () => {
     }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("data/gallery.json")
-        .then(response => response.json())
-        .then(data => {
-            const gallery = data.gallery;
-            const cardContainer = document.getElementById("cardContainer");
+// Load Spotlight Gallery Cards
+const loadGallerySpotlight = async () => {
+    try {
+        const response = await fetch("data/gallery.json");
+        const data = await response.json();
 
-            // Shuffle and select 3 random items
-            const shuffled = gallery.sort(() => 0.5 - Math.random()).slice(0, 3);
+        const gallery = data.gallery;
+        const cardContainer = document.getElementById("cardContainer");
 
-            shuffled.forEach(item => {
-                const card = document.createElement("div");
-                card.classList.add("spotlight-card");
+        // Shuffle and select 3 random items
+        const shuffled = gallery.sort(() => 0.5 - Math.random()).slice(0, 3);
 
-                card.innerHTML = `
-                    <h3>${item.name}</h3>
-                    <img src="${item.image}" alt="${item.name}" loading="lazy">
-                    <p>${item.description}</p>
-                `;
+        shuffled.forEach(item => {
+            const card = document.createElement("div");
+            card.classList.add("spotlight-card");
 
-                cardContainer.appendChild(card);
-            });
-        })
-        .catch(error => console.error("Error loading gallery data:", error));
-});
-// Initialize weather data on page load
-document.addEventListener("DOMContentLoaded", fetchCurrentWeather);
+            card.innerHTML = `
+                <h3>${item.name}</h3>
+                <img src="${item.image}" alt="${item.name}" loading="lazy">
+                <p>${item.description}</p>
+            `;
 
+            cardContainer.appendChild(card);
+        });
+    } catch (error) {
+        console.error("Error loading gallery data:", error);
+    }
+};
 
-document.addEventListener("DOMContentLoaded", function () {
+// Display Visit Message
+const displayVisitMessage = () => {
     const visitMessage = document.createElement("div");
     visitMessage.id = "visit-message";
     visitMessage.style.position = "fixed";
@@ -97,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     visitMessage.style.fontSize = "16px";
     visitMessage.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.2)";
     visitMessage.style.display = "none"; // Hidden by default
+
     document.body.appendChild(visitMessage);
 
     const lastVisit = localStorage.getItem("lastVisit");
@@ -115,4 +117,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Store the current visit date
     localStorage.setItem("lastVisit", new Date().toISOString());
+};
+
+// Update Footer Year
+const updateFooterYear = () => {
+    document.getElementById('year').textContent = new Date().getFullYear();
+};
+
+// Initialize all functionalities on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", () => {
+    fetchCurrentWeather();     // Fetch Weather
+    loadGallerySpotlight();    // Load Gallery Spotlight
+    displayVisitMessage();     // Show Visit Message
+    updateFooterYear();        // Update Footer Year
 });
