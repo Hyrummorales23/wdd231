@@ -169,7 +169,7 @@ main section {
 }
 
 select.invalid {
-    border-color: red;
+    border-color: #110de3;
     background-color: #ffe6e6;
 }
 
@@ -181,7 +181,7 @@ select.invalid {
 }
 
 .required {
-    color: rgb(190, 9, 9);
+    color: #110de3;
     font-weight: bold;
     margin-left: 4px;
 }
@@ -207,7 +207,7 @@ legend {
     border: none;
     font-weight: bold;
     font-family: "Rock Salt", sans-serif;
-    color: rgb(212, 90, 3);
+    color: var(--black);
     margin-bottom: 1rem;
 }
 
