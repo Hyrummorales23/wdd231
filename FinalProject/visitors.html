@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plan your visit to Tikal National Park by filling out our visitor form. Get in touch for park information, guided tours, entrance fees, and travel tips to explore the ancient Mayan ruins and the lush Guatemalan jungle.">
+    <meta name="author" content="Hyrum Morales">
+    <meta property="og:title" content="Visitors - Discover Tikal National Park">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://github.com/Hyrummorales23/wdd231/blob/main/FinalProject/images/logo-tikal.webp">
+    <meta property="og:url" content="https://Hyrummorales23.github.io/wdd231/FinalProject/visitors.html">
+    <title>Visitors - Discover Tikal National Park</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/visitors-small.css">
+    <link rel="stylesheet" href="styles/visitors-large.css">
+
+    <script src="scripts/visitors.js" defer></script>
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card"
+        content="https://github.com/Hyrummorales23/wdd231/blob/main/FinalProject/images/logo-tikal.webp">
+    <meta name="twitter:title" content="Visitors - Discover Tikal National Park">
+    <meta name="twitter:description"
+        content="Plan your visit to Tikal National Park by filling out our visitor form. Get in touch for park information, guided tours, entrance fees, and travel tips to explore the ancient Mayan ruins and the lush Guatemalan jungle.">
+    <meta name="twitter:image" content="images/logo-tikal.webp">
+    <meta name="twitter:url" content="https://hyrummorales23.github.io/wdd231/FinalProject/visitors.html">
+    <meta name="twitter:site" content="@iPanaHyrum">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Website logo">
+        <h1>Discover Tikal National Park</h1>
+        <button id="myButton"></button>
+        <nav id="animate">
+            <ul class="menuLinks">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li class="current-menu-item"><a href="gallery.html">Gallery</a></li>
+                <li><a href="visitors.html" title="Visitors">Visitors</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="visitor-form-section">
+            <h2>Plan Your Visit to Tikal National Park</h2>
+            <form id="visitor-form" action="thankyou.html" method="get">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Full Name: <span class="required">*</span></label>
+                    <input type="text" id="full-name" name="full-name" required autocomplete="name"
+                        placeholder="John Doe">
+
+                    <label for="email">Email Address: <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required autocomplete="email"
+                        placeholder="example@email.com">
+
+                    <label for="phone">Phone Number (Optional):</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+502 12345678">
+                </fieldset>
+
+                <!-- Visit Details -->
+                <fieldset>
+                    <legend>Visit Details</legend>
+                    <label for="visit-date">Planned Visit Date: <span class="required">*</span></label>
+                    <input type="date" id="visit-date" name="visit-date" required>
+
+                    <label for="visitors">Number of Visitors: <span class="required">*</span></label>
+                    <select id="visitors" name="visitors" required>
+                        <option value="" disabled selected>Please select an option</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                    </select>
+
+                    <label for="tour-type">Preferred Tour Type: <span class="required">*</span></label>
+                    <select id="tour-type" name="tour-type" required>
+                        <option value="" disabled selected>Please select an option</option>
+                        <option value="guided">Guided Tour</option>
+                        <option value="self-guided">Self-Guided</option>
+                        <option value="wildlife">Wildlife Tour</option>
+                        <option value="archaeology">Archaeology-focused Tour</option>
+                        <option value="custom">Custom Inquiry</option>
+                    </select>
+                </fieldset>
+
+                <!-- Additional Services -->
+                <fieldset>
+                    <legend>Additional Services</legend>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="services[]" value="accommodation"> Accommodation
+                            Assistance</label>
+                        <label><input type="checkbox" name="services[]" value="transportation"> Transportation
+                            Info</label>
+                        <label><input type="checkbox" name="services[]" value="food"> Food & Dining Suggestions</label>
+                        <label><input type="checkbox" name="services[]" value="wildlife-tips"> Wildlife Watching
+                            Tips</label>
+                        <label><input type="checkbox" name="services[]" value="culture"> Cultural Experiences</label>
+                    </div>
+                </fieldset>
+
+                <!-- Questions or Special Requests -->
+                <fieldset>
+                    <legend>Questions or Special Requests</legend>
+                    <label for="message">Message/Comments: (Optional)</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Let us know any special requests or questions..."></textarea>
+                </fieldset>
+
+                <!-- Consent / Submit -->
+                <fieldset>
+
+                    <!-- Hidden Timestamp -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit">Plan My Visit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Discover Tikal National Park</p>
+            <p>7av. 12-32 zona 5</p>
+            <p>Peten, Guatemala</p>
+            <p>Email: info@TikalNationalPark.org</p>
+            <p>Phone: +502 36125348</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook logo"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.svg" alt="Twitter logo"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="Instagram logo"></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Discover Tikal National Park. All rights reserved.</p>
+            <p>WDD 231 - Hyrum Morales</p>
+            <p>Thank you for Visiting</p>
+            <p>WDD231 Final Project by Hyrum Morales</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
